@@ -29,12 +29,6 @@ stage('one'){
         }
         }
         stage('integration test'){
-          agent{
-            docker{
-              reuseNode false
-              image 'ubuntu'
-            }
-          }
           steps{
             echo'integration testing is happening'
           }
